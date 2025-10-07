@@ -65,19 +65,29 @@ export const SOCIAL_HANDLES = {
 export const NAV_ITEMS = [
   { key: "home", label: "home", href: "/" },
   { key: "projects", label: "projects", href: "/projects" },
-  { 
-    key: "how", 
-    label: "how", 
-    href: "/how",
-    // NEW: Dropdown items
-    dropdown: [
-      { key: "how-main", label: "How We Work", href: "/how" },
-      { key: "how-safety", label: "Safety", href: "/how/safety" },
-      { key: "how-licensing", label: "Licensing", href: "/how/licensing" },
-    ]
-  },
+  { key: "how", label: "how", href: "/how" },
   { key: "about", label: "about", href: "/about" },
   { key: "join", label: "join", href: "/join" },
+] as const;
+
+/**
+ * How dropdown sub-navigation
+ */
+export const HOW_DROPDOWN = [
+  { label: "How We Work", href: "/how" },
+  { label: "Safety", href: "/how/safety" },
+  { label: "Licensing", href: "/how/licensing" },
+] as const;
+
+/**
+ * About dropdown sub-navigation
+ * NEW: Added for about subpages
+ */
+export const ABOUT_DROPDOWN = [
+  { label: "Overview", href: "/about" },
+  { label: "Origin", href: "/about/origin" },
+  { label: "Mission", href: "/about/mission" },
+  { label: "Founder", href: "/about/founder" },
 ] as const;
 
 /**

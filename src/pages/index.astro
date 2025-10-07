@@ -38,24 +38,36 @@ const seo = buildSEO({
     <!-- ========================================================================
          HERO SECTION — Core Message
          ======================================================================== -->
-    <header class="home-hero" aria-labelledby="main-title">
-      <p class="eyebrow">Open Research for a Living Earth</p>
-      <h1 id="main-title">arc^</h1>
-      <p class="lead home-lede">
-        ArcUp builds and tests <strong>plasma-based systems for ecological regeneration</strong>.  
-        We bring together researchers, builders, and communities to develop technology that serves life over profit.
-      </p>
-      <p class="home-context">
-        Our work is guided by the <a href="https://repractice.xbyali.page" class="underline">Repractice Ethical Framework</a>—
-        ensuring all research remains open, regenerative, and accountable to the commons.
-      </p>
+      <header class="home-hero" aria-labelledby="main-title" aria-describedby="home-summary">
+        <p class="eyebrow">Open Research for a Thriving Earth</p>
+
+        <h1 id="main-title" class="hero-title">arc^</h1>
+
+        <p class="lead home-lede">
+          <em>ArcUp</em> is an open experimental research framework developing 
+          <strong>plasma-based systems for ecological regeneration and resilience.</strong>
+        </p>
+
+        <p class="home-body">
+          We explore how controlled electrical discharges can purify water systems, 
+          restore soil function, and repair damaged ecosystems — 
+          guided by the belief that technology should <em>serve life, not profit.</em>
+        </p>
+
+        <p class="home-context">
+          Our work follows the 
+          <a href="https://repractice.xbyali.page" class="underline" target="_blank" rel="noopener noreferrer">
+            Repractice Ethical Framework
+          </a>, 
+          ensuring all research remains <em>open, regenerative, and accountable to the commons.</em>
+        </p>
 
       <div class="hero-actions">
         <LinkButton href={withBase("/projects")} variant="primary" icon="arrow-right">
-          Explore Projects
+          Start with a Project Idea
         </LinkButton>
         <LinkButton href={withBase("/how")} variant="outline" icon="arrow-right">
-          See How We Work
+           Learn Our Approach
         </LinkButton>
       </div>
     </header>
